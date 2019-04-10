@@ -3,13 +3,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
-import Video from 'react-native-video';
+// import Video from 'react-native-video';
 
 export default function MessageVideo({ containerStyle, videoProps, videoStyle, currentMessage }) {
   return (
     // eslint-disable-next-line no-use-before-define
     <View style={[styles.container, containerStyle]}>
-      <Video
+      {/* <Video
         {...videoProps}
         ref={(r) => {
           this.player = r;
@@ -20,7 +20,7 @@ export default function MessageVideo({ containerStyle, videoProps, videoStyle, c
         onBuffer={this.onBuffer}
         onLoadStart={this.onLoadStart}
         onLoad={this.onLoad}
-      />
+      /> */}
     </View>
   );
 }
